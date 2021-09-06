@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112734578-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112734578-1');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Game — Superman</title>
+    <link rel="stylesheet" href="styles/styles.css?cb=5">
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Lato|Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Javascript Game — Flappy Superman</h1>
+            <p class="instructions">
+                Get points by flying through the skyscrapers!<br/>
+                Click the Start button to begin! <br/>
+                Press any key on the keyboard to make superman fly!
+            </p>
+            <br/>
+            <div class="scores-div">
+                <p class="score" id="score">
+                    Score:
+                </p>
+                <p class="highscore" id="highscore">
+                    Highscore:
+                </p>
+            </div>
+            <div>
+                <button id="startAnimation">START</button>
+                <button id="stopAnimation">RESTART</button>
+            </div>
+        
+            <canvas id="canvas" width="288" height="512"></canvas>
+            <div class="instructions">
+
+            </div>
+            <div class="footer">
+                <p>Coded by <a href="http://ttang.bcitwebdeveloper.ca">Tiffany Tang.</a></p>
+                <p>For educational use.</p>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/jquery_v3.4.1.js"></script>
+    <script src="scripts/script.js?cb=5"></script>
+</body>
+</html>
